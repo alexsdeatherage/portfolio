@@ -82,6 +82,20 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
+	.about-photo {
+    max-width: 250px;      /* Adjust width as needed */
+    margin: 0 auto;
+    padding-left: 24px;    /* Add spacing to left */
+    padding-right: 24px;   /* Add spacing to right */
+	}
+	
+	.about-photo img {
+		width: 100%;
+		height: auto;
+		border-radius: 8px;    /* Optional: rounded corners */
+		box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Optional: subtle shadow */
+	}
+
 	body {
 		background: #fff;
 	}
