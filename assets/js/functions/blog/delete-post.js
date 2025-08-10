@@ -1,5 +1,6 @@
 const connectDB = require('../utils/db');
 const Post = require('../models/post');
+const { requireAuth } = require('../utils/auth');
 
 const allowCorsHeaders = {
   'Access-Control-Allow-Origin': '*',
@@ -22,6 +23,10 @@ exports.handler = async (event) => {
   }
 
   try {
+    // Check authentication
+    const authResult = await requireAuth(event);
+    if (authResult) return authResult;
+
     await connectDB();
 
     const params = event.queryStringParameters || {};

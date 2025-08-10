@@ -1,5 +1,19 @@
 {
-	"dependencies": {
-		"mongoose": "^8.17.0"
-	}
+  "name": "portfolio-blog",
+  "version": "1.0.0",
+  "description": "Portfolio blog with authentication",
+  "main": "index.js",
+  "scripts": {
+    "generate-hash": "node scripts/generate-password-hash.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "mongoose": "^7.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "bcryptjs": "^2.4.3"
+  },
+  "devDependencies": {},
+  "keywords": ["blog", "portfolio", "authentication"],
+  "author": "",
+  "license": "ISC"
 }
